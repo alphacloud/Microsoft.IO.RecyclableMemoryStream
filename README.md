@@ -1,4 +1,7 @@
-# Microsoft.IO.RecyclableMemoryStream [![NuGet Version](https://img.shields.io/nuget/v/Microsoft.IO.RecyclableMemoryStream.svg?style=flat)](https://www.nuget.org/packages/Microsoft.IO.RecyclableMemoryStream/) 
+# Microsoft.IO.RecyclableMemoryStream [![NuGet Version](https://img.shields.io/nuget/v/Microsoft.IO.RecyclableMemoryStream-Unofficial.svg?style=flat)](https://www.nuget.org/packages/Microsoft.IO.RecyclableMemoryStream-Unofficial/) 
+
+*Note:* This is an unofficial build of the https://github.com/Microsoft/Microsoft.IO.RecyclableMemoryStream library.
+It was created to apply community patches 
 
 A library to provide pooling for .NET MemoryStream objects to improve application performance. 
 
@@ -7,7 +10,7 @@ A library to provide pooling for .NET MemoryStream objects to improve applicatio
 Install the latest version from NuGet (for .NET 4.5 and up)
 
 ```
-Install-Package Microsoft.IO.RecyclableMemoryStream
+Install-Package Microsoft.IO.RecyclableMemoryStream-Unofficial
 ```
 
 ## Features
@@ -25,11 +28,7 @@ For more details, refer to the [announcement blog post](http://www.philosophical
 
 ## Build Targets
 
-The code ships utilizing CommonBuildToolset. This provides some build extensions over top of MSBuild to automatically pull
-NuGet packages from command line build, etc.
-
-MSBuild 15 is required to build the code. You get this with Visual Studio 2017. Cross-platform builds will be documented
-in a future release.
+Cake will be used 
 
 ## Testing
 

@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.4;net40;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard1.4;net40;net45</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-  <!-- for assembly signing we use a magic variable coupled with a special build definition which skips UTs -->
-  <PropertyGroup Condition="'$(DelaySignKeyFile)' != ''">
-    <DefineConstants>$(DefineConstants);NOFRIENDASSEMBLY</DefineConstants>
-    <AssemblyOriginatorKeyFile>$(DelaySignKeyFile)</AssemblyOriginatorKeyFile>
-    <DelaySign>true</DelaySign>
-    <SignAssembly>true</SignAssembly>
+    <PackageId>Microsoft.IO.RecyclableMemoryStream-Unofficial</PackageId>
+    <Authors>Ben Watson; Chip Locke</Authors>
+    <PackageLicenseUrl>https://github.com/Microsoft/Microsoft.IO.RecyclableMemoryStream/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/alphacloud/Microsoft.IO.RecyclableMemoryStream</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/alphacloud/Microsoft.IO.RecyclableMemoryStream</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>MemoryStream Memory MemoryPool memory-pool</PackageTags>
+    <PackageReleaseNotes>Unofficial build of Microsoft.IO.RecyclableMemoryStream</PackageReleaseNotes>
   </PropertyGroup>
 </Project>
